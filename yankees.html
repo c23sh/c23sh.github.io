@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">
+	<title>Lets go Yankees!</title>
+	<style>
+	#yankees {
+		transition: 1s ease-in-out;
+		width: 200px;
+		height: 220px;
+		background-position: center;
+
+		background-image: url(https://www.stickpng.com/assets/images/584d4b6e0a44bd1070d5d493.png);
+
+		background-repeat: no-repeat;
+		background-size: contain;
+		border-radius: 50%;
+
+	}
+	
+	#yankees:hover {
+		transition: 1s ease-in-out;
+
+		background-image: url(https://media.giphy.com/media/1qMMp3caTc5DknTs6M/giphy.gif);
+		width: 500px;
+		height: 280px;
+
+		background-image: no-repeat;
+		border-radius: 0%;
+	}	
+p{
+
+	font-family: 'Bangers', cursive;
+	font-size: 50px;
+}
+
+		#bat {
+		transition: 1s ease-in-out;
+		width: 200px;
+		height: 200px;
+		background-position: center;
+
+		background-image: url(https://image.shutterstock.com/image-photo/closeup-baseball-bat-isolated-on-260nw-337382027.jpg);
+		background-repeat: no-repeat;
+		background-size: contain;
+}
+		#bat:hover {
+			transition: rotate(90deg);
+			transition-duration: 2s;
+		}
+	
+		#ball {
+			position:absolute;
+		width:50px;
+		height:50px;
+		background-position: right;
+		background-image: url(https://fivethirtyeight.com/wp-content/uploads/2018/01/mobileinfo-01.png);
+		background-repeat: no-repeat;
+		background-size: contain;
+	/*	animation-name:pitch;
+		animation-duration: 2s;
+		animation-timing-function: */
+
+		left:80%;
+		top:50%;
+
+		}
+	</style>
+</head>
+<body>
+
+	<audio id="hello"  src="HeySpencer.m4a">
+		
+
+	</audio>
+
+
+
+<div id="yankees"></div>
+
+<p>Lets go Yankees</p>
+
+<div id="bat"></div>
+
+<div id= "ball"></div>
+
+<script type="text/javascript">
+	
+var hey = document.getElementById('hello');
+
+	var ball = document.getElementById('ball');
+
+	document.addEventListener("click", function() {
+
+hey.play();
+		console.log("Hey Spencer, whatttup?!");
+
+
+})
+
+		document.addEventListener("mousemove", function() 
+		{
+			console.log(ball.style)
+
+			ball.style.left = event.X + "px";
+			ball.style.top = event.Y + "px";
+
+
+})
+
+
+</script>
+
+</body>
+</html>
