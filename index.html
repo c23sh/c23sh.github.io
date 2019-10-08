@@ -8,24 +8,31 @@
     }
 
     #one {
-        width: 100px;
-        height: 100px;
-        background-color: green;
-        left: 40%;
+        width: 300px;
+        height: 300px;
+        /*background-color: green;*/
+        background-image: url(./imgs/journal.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        left: 50%;
         top: 30%;
+        z-index: 0;
     }
 
     #two {
-        width: 200px;
+        width: 250px;
         height: 200px;
-        background-color: lightgreen;
+       /* background-color: lightgreen;*/
+        background-image: url(./imgs/aaron-judge.png);
+        background-size: cover;
         left: 20%;
         top: 50%;
+        z-index: 1;
     }
 
 
     #three {
-        background-image: url(https://upload.wikimedia.org/wikipedia/en/1/1e/Baseball_%28crop%29.jpg);
+        background-image: url(baseball.png);
         left: 20%;
         top: 10%;
         width: 150px;
@@ -36,6 +43,7 @@
         padding-top: 5%;
         padding-left: 5%;
         color: black;
+        z-index: 2;
 
     }
 
@@ -71,11 +79,19 @@ padding-top:10%;
 
 
     }
+
+#intro{
+	font-family:courier;
+	width:300px;
+	height:300px;
+}
+
     </style>
 </head>
 
 <body>
-    <a href="other-page.html">
+	<div id="intro"><p>This is my piece of the digital universe. Click on the images to see whatsup.</p></div>
+    <a href="my-journal.html">
         <div id="one" class="circle"></div>
     </a>
     <a href="yankees.html">
