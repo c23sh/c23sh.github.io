@@ -19,27 +19,27 @@
         z-index: 0;
     }
 
-    #two {
+    #BaseballWebsite {
         width: 250px;
-        height: 200px;
-       /* background-color: lightgreen;*/
-        background-image: url(./imgs/aaron-judge.png);
+        height: 250px;
+        /* background-color: lightgreen;*/
+        background-image: url(baseball.png);
         background-size: cover;
-        left: 20%;
-        top: 50%;
+        left: 10%;
+        top: 60%;
         z-index: 1;
     }
 
 
-    #three {
-        background-image: url(baseball.png);
-        left: 20%;
-        top: 10%;
-        width: 150px;
-        height: 150px;
+    #PersonCard {
+        background-image: url(./imgs/aaron-judge.png);
+        left: 10%;
+        top: 30%;
+        width: 200px;
+        height: 200px;
         background-repeat: no-repeat;
         background-size: contain;
-      /*  background-color: blue;*/
+        /*  background-color: blue;*/
         padding-top: 5%;
         padding-left: 5%;
         color: black;
@@ -66,42 +66,44 @@
 
     #tape {
         background-image: url(imgs/tape.png);
-        left:-10px;
-        top: 10px;
+        left: 0%;
+        top: 50%;
         width: 150px;
         height: 50px;
         background-repeat: no-repeat;
         background-size: cover;
-        /*background-color: blue;
-*/        position: relative;
-text-align:center;
-padding-top:10%;
-
+        /*background-color: blue;*/
+        
+        text-align: center;
+        padding-top: 1%;
+		z-index: 3;
 
     }
 
-#intro{
-	font-family:courier;
-	width:300px;
-	height:300px;
-}
-
+    #intro {
+        font-family: courier;
+        font-size: 20px;
+        	width: 200px;
+        height: 200px;
+        background-color: yellow;
+    }
     </style>
 </head>
 
 <body>
-	<div id="intro"><p>This is my piece of the digital universe. Click on the images to see whatsup.</p></div>
+    <div id="intro">
+        <p>Welcome To My Website!</p>
+    </div>
     <a href="my-journal.html">
         <div id="one" class="circle"></div>
     </a>
     <a href="yankees.html">
-        <div id="two" class="circle"></div>
+        <div id="BaseballWebsite" class="circle"></div>
     </a>
     <a href="https://codepen.io/c23sh/pen/WNegNmv">
-        <div id="three" class="circle">
-            <div id="tape">
-                <p>My Person Card</p>
-            </div>
+        <div id="PersonCard" class="circle"></div>
+        <div id="tape">
+            <p>My Person Card</p>
         </div>
     </a>
     <a href="other-page.html">
