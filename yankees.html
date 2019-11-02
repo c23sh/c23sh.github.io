@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
-<head>
 
-	<link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">
-	<title>Lets go Yankees!</title>
-	<style>
-	#yankees {
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">
+    <title>Lets go Yankees!</title>
+    <style>
+		#yankees {
 		transition: 1s ease-in-out;
-		width: 200px;
+		width: 220px;
 		height: 220px;
 		background-position: center;
 
@@ -15,19 +15,16 @@
 
 		background-repeat: no-repeat;
 		background-size: contain;
-		border-radius: 50%;
-
 	}
 	
 	#yankees:hover {
 		transition: 1s ease-in-out;
 
-		background-image: url(https://media.giphy.com/media/1qMMp3caTc5DknTs6M/giphy.gif);
-		width: 500px;
-		height: 280px;
+		background-image: url(https://media0.giphy.com/media/jI89gKYkuOLI9CqsE6/giphy.gif);
+		width: 400px;
+		height: 200px;
 
 		background-image: no-repeat;
-		border-radius: 0%;
 	}	
 p{
 
@@ -46,71 +43,61 @@ p{
 		background-size: contain;
 }
 		#bat:hover {
-			transition: rotate(90deg);
-			transition-duration: 2s;
+			transition: 1s;
+			background-image: url(https://media.giphy.com/media/1qMMp3caTc5DknTs6M/giphy.gif);
+			width:400px;
+			height: 200px;
 		}
 	
 		#ball {
-			position:absolute;
-		width:50px;
-		height:50px;
+		background-position:center;
+		width:150px;
+		height:150px;
 		background-position: right;
 		background-image: url(https://fivethirtyeight.com/wp-content/uploads/2018/01/mobileinfo-01.png);
 		background-repeat: no-repeat;
 		background-size: contain;
-	/*	animation-name:pitch;
-		animation-duration: 2s;
-		animation-timing-function: */
+		}
 
-		left:80%;
-		top:50%;
+		#ball:hover {
+			transition: 1s;
+			background-image: url(https://media1.tenor.com/images/d114877aa7b5e26498b114525baaa929/tenor.gif?itemid=14594081);
+			width:400px;
+			height: 200px;
 
 		}
 	</style>
 </head>
+
 <body>
+    <audio id="hello" src="HeySpencer.m4a">
+    </audio>
+    <p>Lets go Yankees</p>
+    <div id="yankees"></div>
+    <div id="bat"></div>
+    <div id="ball"></div>
+    <script type="text/javascript">
+    var hey = document.getElementById('hello');
 
-	<audio id="hello"  src="HeySpencer.m4a">
-		
+    var ball = document.getElementById('ball');
 
-	</audio>
+    document.addEventListener("click", function() {
 
-
-
-<div id="yankees"></div>
-
-<p>Lets go Yankees</p>
-
-<div id="bat"></div>
-
-<div id= "ball"></div>
-
-<script type="text/javascript">
-	
-var hey = document.getElementById('hello');
-
-	var ball = document.getElementById('ball');
-
-	document.addEventListener("click", function() {
-
-hey.play();
-		console.log("Hey Spencer, whatttup?!");
+        hey.play();
+        console.log("Hey Spencer, whatttup?!");
 
 
-})
+    })
 
-		document.addEventListener("mousemove", function() 
-		{
-			console.log(ball.style)
+    document.addEventListener("mousemove", function() {
+        console.log(ball.style)
 
-			ball.style.left = event.X + "px";
-			ball.style.top = event.Y + "px";
-
-
-})
+        ball.style.left = event.X + "px";
+        ball.style.top = event.Y + "px";
 
 
-</script>
-
+    })
+    </script>
 </body>
+
 </html>
