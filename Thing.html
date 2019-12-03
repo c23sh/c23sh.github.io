@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		#ball{
+			width:600px;
+			height: 500px;
+			background-color: green;
+		}
+	</style>
+</head>
+<body>
+
+	<div id="ball"></div>
+
+	<script type="text/javascript">
+		var ball = document.getElementById("ball")
+
+		var balls = ["url(https://carlisletheacarlisletheatre.org/images/rock-clip-art-transparent-background-8.jpg)", "url(./imgs/paper.png)", "url(https://www.netclipart.com/pp/m/13-134608_scissor-clipart-craft-transparent-background-scissors-clipart.png)"]
+
+		var randomNumber;
+
+		var multiplier;
+
+
+		var button = document.getElementById("button");
+		var input = document.getElementById("input");
+
+		button.addEventListener('click', function(){
+			balls.push()=input.value;
+			multiplier = multiplier+1;
+			console.log("multiplier");
+		});
+
+		ball.addEventListener('click', function() {
+			randomNumber = Math.round(Math.random() = multiplier);
+			fish.style.backgrounImage = balls[randomNumber];
+		});
+
+	</script>
+</body>
+</html>
