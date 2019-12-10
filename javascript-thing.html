@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+	function makeIsland(dude)
+
+	{var islanders = document.createElement("div");
+	document.body.appendChild(islanders);
+	islanders.style.width = "100px";
+	islanders.style.height = "100px";
+	islanders.style.margin = "2px";
+	islanders.style.backgroundRepeat = "no-repeat";
+	islanders.style.backgroundSize = "contain";
+	islanders.style.backgroundImage = "url(https://thehockeynews.com/wp-content/uploads/IslesMAIN-3.jpg)";
+	islanders.id="hockey"+dude;
+	islanders.innerText=islanders.id;
+};
+
+for (var x=0; x<200; x=x+1){
+	makeIsland(x);
+}
+
+	
+	
+
+</script>
+
+</body>
+</html>
