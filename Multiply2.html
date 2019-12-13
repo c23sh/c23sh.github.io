@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		button{
+			height: 30px;
+			width: 150px;
+		}
+		input{
+			height: 30px;
+			width: 150px;
+		}
+	</style>
+</head>
+<body>
+	<H2>Multiply in Javascript!</H2>
+<input id="NumberOne"></input>
+<input id="NumberTwo"></input>
+<button id="button">Calculate</button>
+<input id="NumberThree"></input>
+
+
+	
+<script type="text/javascript">
+	var NumberOne = document.getElementById('NumberOne');
+
+	var NumberTwo = document.getElementById('NumberTwo');
+
+	var NumberThree = document.getElementById('NumberThree');
+
+	var Calculate = document.getElementById('button')
+
+	button.addEventListener("click",function multiply(){
+NumberThree.value = NumberOne.value * NumberTwo.value
+	});
+
+
+</script>
+</body>
+</html>

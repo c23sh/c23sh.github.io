@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+
+    <style>
+    	input, button{
+    		width:400px;
+    		height:200px;
+    		font-size:100px;
+    		border:5px black solid;
+    	}
+
+    	button{
+    		background-color:grey;
+    		border-radius:10%;
+    	}
+
+    	#three{
+    		font-size:40px;
+    	}
+
+    	#imageThing{
+    		width:400px;
+    		height:300px;
+    		background-size:contain;
+    		background-repeat: no-repeat;
+    		background-position: center;
+    		border:solid black 1px;
+    	}
+    </style>
+</head>
+
+<body>
+    <input id="one"></input>
+    <input id="two"></input>
+    <button id="button">woosh!</button>
+    <input id="three"></body>
+
+    <div id="imageThing"></div>
+<script type="text/javascript">
+var one = document.getElementById('one');
+var two = document.getElementById('two');
+var three = document.getElementById('three');
+var woosh = document.getElementById('button');
+var imageThing = document.getElementById("imageThing");
+
+
+woosh.addEventListener("click", function multiply() {
+    var answer =  one.value * two.value;
+    three.value = answer;
+});
+
+// var array = ["https://media.npr.org/assets/img/2013/08/02/snail-8296a552f7bd1064368205306ff8a3c7c7bdc7c4-s800-c85.jpg", "https://www.snail-world.com/wp-content/uploads/snail-front.jpg", "https://topnaturalmattresses.com/wp-content/uploads/2019/07/how-long-do-snail-sleep.jpg"]
+
+
+var array = ["url(https://media.npr.org/assets/img/2013/08/02/snail-8296a552f7bd1064368205306ff8a3c7c7bdc7c4-s800-c85.jpg)", "url(https://www.snail-world.com/wp-content/uploads/snail-front.jpg)", "url(https://topnaturalmattresses.com/wp-content/uploads/2019/07/how-long-do-snail-sleep.jpg)"]
+
+
+
+woosh.addEventListener("click", function(){
+	var randomNumber = Math.round(Math.random()*2);
+
+	imageThing.style.backgroundImage = array[randomNumber];
+	console.log(randomNumber);
+
+});
+
+
+</script>
+
+</body>
+
+</html>

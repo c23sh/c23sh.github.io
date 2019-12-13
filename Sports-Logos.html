@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style type="text/css">
+        button{
+            width: 200px;
+            height: 50px;
+            font-size: 20px
+        }
+        #image{
+            width: 500px;
+            height: 500px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            border:solid black 2px
+            ;
+        }
+    </style>
+</head>
+
+<body>
+   
+        <button  id="button"
+>Choose a New York Sports Team
+        </button>
+<div id="image"></div>
+        <script type="text/javascript">
+            
+var button = document.getElementById('button');
+var image = document.getElementById("image");
+
+            	var team = ["url(https://fanatics.frgimages.com/FFImage/thumb.aspx?i=/productimages/_3336000/altimages/ff_3336161-6cab98e5339816cd60cdalt1_full.jpg&w=900)", "url(https://sportslogohistory.com/wp-content/uploads/2017/12/new_york_islanders_2011-pres-1.png)", "url(https://images.squarespace-cdn.com/content/v1/5984890903596eaddbfc4532/1505425398226-G7KN0LINQE0L7NKO3QA2/ke17ZwdGBToddI8pDm48kGifSodES3zPVkbBfms6E6VZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpxECfn0Lqy2_ki_HPaXdE5tSXerfeOuyNpPEoTSSF0SfE_tttDEJGwyHLiPrh9SaMc/21st-CENTURY-METS_01.png)", "url(http://content.sportslogos.net/logos/1/20/full/144.png)", "url(https://i.pinimg.com/originals/a0/60/5c/a0605c7ee40bd08c25743c479cf4d93b.gif)", "url(http://content.sportslogos.net/news/2018/07/New-York-Jets-logo.png)", "url(https://i.pinimg.com/originals/b6/a2/d2/b6a2d250ebfa7ef701fbca24be0f91f6.jpg)", "url(https://images.homedepot-static.com/productImages/f7c5f737-51ed-47e0-b84d-80ea97446447/svn/black-applied-icon-wall-decals-nbop0303-64_600.jpg)"];
+
+button.addEventListener(
+    "click", function chooseTeam(){
+var randomNumber = Math.round(Math.random()*8);
+    
+
+image.style.backgroundImage = team[randomNumber];
+    console.log(randomNumber);
+});
+
+
+            	//function has 3 parts: 1. generating a random whole number between and including 0 and 7. 2. set the background image of a div to the array[IN HERE IS THE RANDOM NUMBER] (because when you put a number with the name of an array between those square brackets, it referes to that number element in the array.) 
+            </script>
+</body>
+
+</html>
