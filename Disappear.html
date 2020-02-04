@@ -24,6 +24,21 @@
 	document.body.appendChild(diego);
 	diego.id="hockey"+dude;
 	diego.style.left = 
+	Math.round(Math.random()*50)+"px";
+	diego.style.top = 
+	Math.round(Math.random()*50)+"px";
+	diego.style.width = 
+	Math.round(Math.random()*50)+"px";
+	diego.style.height = 
+	Math.round(Math.random()*50)+"px";
+	diego.classList.add("diego");
+};
+
+function time(dude){
+	var diego = document.createElement("div");
+	document.body.appendChild(diego);
+	diego.id="hockey"+dude;
+	diego.style.left = 
 	Math.round(Math.random()*100)+"px";
 	diego.style.top = 
 	Math.round(Math.random()*100)+"px";
@@ -33,6 +48,9 @@
 	Math.round(Math.random()*100)+"px";
 	diego.classList.add("diego");
 };
+
+
+setInterval(time, 100)
 
 for (var x=0; x<1000; x=x+1){
 	makeIsland(x)};
