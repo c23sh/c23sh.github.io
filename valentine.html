@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Bungee&display=swap" rel="stylesheet">
+    <title>I love you Dad!!!</title>
+    <style type="text/css">
+    button {
+        width: 200px;
+        height: 50px;
+        font-size: 20px;
+    }
+
+    #title {
+    	background-color: white;
+    	width: 500px;
+    	height:100px;
+    	font-size: 50px;
+    	text-align: center;
+    	font-family: 'Bungee', cursive;
+    }
+
+
+    #image {
+        border: 1px solid black;
+        width: 500px;
+        height: 400px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    #heart {
+    	width: 500px;
+    	height: 500px;
+    	background-image: url(https://www.starpng.com/public/uploads/preview/heart-png-hd-transparent-background-d-heart-transparent-background-101576782197xlvnipkzkt.png);
+    	background-size: contain;
+    	background-repeat: no-repeat;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="title"><p>I love you Dad!!!</p></div>
+    <button id="button">Click For a Cool Photo</button>
+    <div id="image"></div>
+    <div id="heart"></div>
+    <script type="text/javascript">
+    var button = document.getElementById('button');
+    var image = document.getElementById("image");
+
+    var team = ["url(https://zogculture.com/wp-content/uploads/2018/05/robert-herzog.jpg)", "url(https://miro.medium.com/max/640/1*tp_QevR3GNpyyha0nHWoXg.jpeg)", "url(https://d1hbpr09pwz0sk.cloudfront.net/profile_pic/robert-herzog-1327e01f)", "url(https://magazine.wharton.upenn.edu/wp-content/uploads/2019/09/winter11_Sporting_Life-137x1981.jpg)", "url(https://www.insightssuccess.com/wp-content/uploads/Robert_Herzog__Founder___CEO___ZogSports.jpg)", "url(https://i.ytimg.com/vi/8w4SzGNMgKw/maxresdefault.jpg)", "url(https://yt3.ggpht.com/a/AGF-l7-m3Q_FfX2ng59CzD22QSkoNwzmQjJP-p61Ww=s900-c-k-c0xffffffff-no-rj-mo)", "url(https://www.zogsports.com/uploadedImages/NY_Website/NY_Images_-_New_Site/Staff/ourteam.png?n=8967)", "url(https://cdn2.hubspot.net/hubfs/3266474/ZogCulture%20-%20Lockup%20(Vertical)%20-%20White-1.png)", "url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRTuNNROWbGuYFDJpLJv4IXpW6xW5SpiejyTzFdleVTPv0acgPR)"];
+
+    button.addEventListener(
+        "click",
+        function chooseTeam() {
+            var randomNumber = Math.round(Math.random() * 10);
+
+
+            image.style.backgroundImage = team[randomNumber];
+            console.log(randomNumber);
+        });
+    </script>
+</body>
+
+</html>
