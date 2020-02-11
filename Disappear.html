@@ -5,6 +5,11 @@
 
 	<style type="text/css">
 		
+		button {
+        width: 200px;
+        height: 50px;
+        font-size: 20px;
+    }
 		.diego{
 			margin: 2px;
 			background-repeat: no-repeat;
@@ -15,11 +20,10 @@
 	</style>
 </head>
 <body>
-
+	<button id="button">Disappear</button>
 <script type="text/javascript">
 
-	function makeIsland(dude)
-
+	function makeDiego(dude)
 	{var diego = document.createElement("div");
 	document.body.appendChild(diego);
 	diego.id="hockey"+dude;
@@ -32,28 +36,35 @@
 	diego.style.height = 
 	Math.round(Math.random()*50)+"px";
 	diego.classList.add("diego");
+
+	var clear = document.getElementById("button");
+	clear.addEventListener("click",
+		function() {
+			diego.style.opacity = "0";
+		})
 };
 
-function time(dude){
-	var diego = document.createElement("div");
-	document.body.appendChild(diego);
-	diego.id="hockey"+dude;
-	diego.style.left = 
-	Math.round(Math.random()*100)+"px";
-	diego.style.top = 
-	Math.round(Math.random()*100)+"px";
-	diego.style.width = 
-	Math.round(Math.random()*100)+"px";
-	diego.style.height = 
-	Math.round(Math.random()*100)+"px";
-	diego.classList.add("diego");
-};
+// function time(dude){
+// 	var diego = document.createElement("div");
+// 	document.body.appendChild(diego);
+// 	diego.id="hockey"+dude;
+// 	diego.style.left = 
+// 	Math.round(Math.random()*100)+"px";
+// 	diego.style.top = 
+// 	Math.round(Math.random()*100)+"px";
+// 	diego.style.width = 
+// 	Math.round(Math.random()*100)+"px";
+// 	diego.style.height = 
+// 	Math.round(Math.random()*100)+"px";
+// 	diego.classList.add("diego");
+// };
 
+ 
 
-setInterval(time, 100)
+// setInterval(time, 100)
 
 for (var x=0; x<1000; x=x+1){
-	makeIsland(x)};
+	makeDiego(x)};
 
 
 
